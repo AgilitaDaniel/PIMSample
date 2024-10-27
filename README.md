@@ -23,3 +23,7 @@ File or Folder | Purpose
 ## Learn More
 
 Learn more at https://cap.cloud.sap/docs/get-started/.
+
+https://github.com/SAP-samples/btp-cap-genai-semantic-search/blob/main/api/srv/sample.ts
+
+https://github.com/SAP-samples/hana-enterprise-search-engine/tree/main

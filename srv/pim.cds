@@ -27,7 +27,7 @@ service pimService {
           key to_Merkmal.name as Merkmal,
           key to_MerkmalDropDownValue.name as DropDownValue,
           to_Merkmal.to_InputType,
-          concat(to_Merkmal.name, concat( '-', to_MerkmalDropDownValue.name) ) as pmma: String
+          concat(to_Merkmal.name, concat( ' - ', to_MerkmalDropDownValue.name) ) as pmma: String
     } where to_Merkmal.to_InputType.dropDown = true group by to_Merkmal.name, to_Merkmal.to_InputType, to_MerkmalDropDownValue.name;
     annotate ProductMerkmalsAuspraegungen with @(Common.SideEffects: {
   SourceProperties: [to_Merkmal_ID],

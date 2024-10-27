@@ -2,6 +2,9 @@ sap.ui.define(["sap/ui/model/Filter", "sap/ui/model/FilterOperator"], function(F
     "use strict";
     return {
         filterItems: function(sValue) {
+            // alert(sValue)
+return 
+               // return new Filter({ path: "to_ProductMerkmalsAuspraegungen/freeText", operator: FilterOperator.LT, value1: 100 });
             // switch (sValue) {
             //     case "0":
             //             return new Filter({ path: "to_ProductMerkmalsAuspraegungen/freeText", operator: FilterOperator.LT, value1: 100 });

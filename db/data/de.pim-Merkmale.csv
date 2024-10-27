@@ -1,0 +1,5 @@
+ID;name;description;to_InputType_ID;onFilterBar
+7c94d7a2-5d60-4ec9-83aa-76d1cf2f7a41;Color;Available color options;366ea9ad-8421-4be7-a18c-ccd9dfe039cf;true
+c04c198d-12b8-407b-89d2-7cf2d958fb62;Sunroof;Sunroof feature option;366ea9ad-8421-4be7-a18c-ccd9dfe039ce;true
+bdf71d6b-bda1-4d2d-a279-0d243bfa35f5;Horsepower;The car's horsepower rating;366ea9ad-8421-4be7-a18c-ccd9dfe039cd;false
+84e815df-8c9f-47d3-867b-9a6239ae9e13;Transmission;Type of transmission;366ea9ad-8421-4be7-a18c-ccd9dfe039cf;false

@@ -1,0 +1,4 @@
+ID,name,freeText,dropDown,checkBox,fieldControlCheckBox,fieldControlDropDown,fieldControlFreeText
+366ea9ad-8421-4be7-a18c-ccd9dfe039cd,FreeText,true,false,false,1,1,7
+366ea9ad-8421-4be7-a18c-ccd9dfe039ce,CheckBox,false,false,true,7,1,1
+366ea9ad-8421-4be7-a18c-ccd9dfe039cf,Dropdown,false,true,false,1,7,1

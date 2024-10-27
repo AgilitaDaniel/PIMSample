@@ -1,0 +1,1 @@
+{"version":3,"file":"CustomFilter.js","names":["sap","ui","define","Filter","FilterOperator","filterItems","sValue"],"sources":["CustomFilter-dbg.js"],"mappings":"AAAAA,IAAIC,GAAGC,OAAO,CAAC,sBAAuB,+BAAgC,SAASC,EAAQC,GACnF,aACA,MAAO,CACHC,YAAa,SAASC,GAetB,EAER","ignoreList":[]}

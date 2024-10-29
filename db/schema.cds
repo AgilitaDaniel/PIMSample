@@ -53,5 +53,19 @@ entity ProductMerkmalsAuspraegungen: cuid, managed {
     checkBox: Boolean;
 }
 
+view ProductMerkmalsAuspraegungenFlat as select from Products as p
+    join ProductMerkmalsAuspraegungen as pc on pc.to_Product.productID = p.productID
+    join MerkmaleDropDownValues as cz on cz.ID = pc.to_MerkmalDropDownValue.ID
+    join Merkmale as c on c.ID = pc.to_Merkmal.ID  {
+    // Select the product fields
+    key p.productID as ProductID,
+        p.productText as ProductDescription,
+         cz.description as MerkmalsDescription,
+    // Concatenate the characteristic values as a single field
+    string_agg(c.description || ': ' || cz.description, ', ' order by c.description) as CharacteristicValues: String,
+} group by
+    p.productID,
+    p.productText;
+
 
 

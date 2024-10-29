@@ -3,11 +3,19 @@ using { de.pim as my } from '../db/schema';
 service pimService {
 
     annotate my.Products with @odata.draft.enabled;
+    entity ProductMerkmalsAuspraegungenFlat as projection on my.ProductMerkmalsAuspraegungenFlat;
+    @cds.search: {
+
+      to_ProductMerkmalsAuspraegungenFlat.CharacteristicValues
+    }
     entity Products as select from my.Products mixin {
-       to_MMAsList: Association to many AllMMAs on to_MMAsList.to_Product.productID = $self.productID 
+       to_MMAsList: Association to many AllMMAs on to_MMAsList.to_Product.productID = $self.productID;
+       to_ProductMerkmalsAuspraegungenFlat: Association to one ProductMerkmalsAuspraegungenFlat on to_ProductMerkmalsAuspraegungenFlat.ProductID = $self.productID
+
     } into {
       *,
-      to_MMAsList
+      to_MMAsList,
+      to_ProductMerkmalsAuspraegungenFlat
     };
     entity Merkmale as projection on my.Merkmale;
     entity MerkmaleDropDownValues as projection on my.MerkmaleDropDownValues;

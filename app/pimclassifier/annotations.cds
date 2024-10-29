@@ -52,6 +52,11 @@ annotate service.Products with @(
             Label : 'productDescription',
             Value : productDescription,
         },
+        {
+            $Type : 'UI.DataField',
+            Value : to_ProductMerkmalsAuspraegungenFlat.CharacteristicValues,
+            Label : 'CharacteristicValues',
+        },
     ],
     UI.SelectionFields : [
         to_MMAsList.pmma,
